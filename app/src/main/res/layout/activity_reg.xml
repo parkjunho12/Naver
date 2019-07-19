@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+
+            android:paddingLeft="10dp">
+
+            <Button
+                android:id="@+id/regback"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                 />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/regmain"
+                android:textSize="15dp"
+                android:textColor="@android:color/holo_green_dark"
+                android:text="회원가입"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+
+            android:paddingRight="10dp">
+
+            <LinearLayout
+
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="환영합니다."
+                android:textSize="30dp"
+                android:textColor="@android:color/holo_green_dark"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView6"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:text="ID" />
+
+                <EditText
+                    android:id="@+id/ID"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="abcd123@0000"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="74dp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="PW" />
+
+                <EditText
+                    android:id="@+id/PW"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="PW"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="130dp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_marginTop="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/Name"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="188dp" />
+
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="300dp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:layout_height="wrap_content"
+                    android:text="Phone" />
+
+                <EditText
+                    android:id="@+id/Phone"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone number"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="261dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Register_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="등록하기"
+                    android:textColor="#ffffff"
+                    android:background="@android:color/holo_green_dark"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"></LinearLayout>
+
+                <Button
+                    android:id="@+id/Back_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="돌아가기"
+                    android:textColor="#ffffff"
+                    android:background="@android:color/holo_green_dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
